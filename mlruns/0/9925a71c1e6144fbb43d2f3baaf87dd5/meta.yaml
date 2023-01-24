@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/9925a71c1e6144fbb43d2f3baaf87dd5/artifacts
+end_time: 1674518521740
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9925a71c1e6144fbb43d2f3baaf87dd5
+run_name: loud-sloth-45
+run_uuid: 9925a71c1e6144fbb43d2f3baaf87dd5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674518517318
+status: 4
+tags: []
+user_id: pedroberaldo

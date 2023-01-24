@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/f927fd6af5dd4a76b80e16e279664df4/artifacts
+end_time: 1674518584980
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f927fd6af5dd4a76b80e16e279664df4
+run_name: grandiose-midge-881
+run_uuid: f927fd6af5dd4a76b80e16e279664df4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674518575318
+status: 4
+tags: []
+user_id: pedroberaldo

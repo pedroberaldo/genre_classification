@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/7bd97ef757d949d3a83dc962a2265e26/artifacts
+end_time: 1674516057320
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7bd97ef757d949d3a83dc962a2265e26
+run_name: ambitious-newt-85
+run_uuid: 7bd97ef757d949d3a83dc962a2265e26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674516039209
+status: 4
+tags: []
+user_id: pedroberaldo

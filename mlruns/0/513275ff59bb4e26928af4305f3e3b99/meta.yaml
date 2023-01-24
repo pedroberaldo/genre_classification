@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/513275ff59bb4e26928af4305f3e3b99/artifacts
+end_time: 1674516257284
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 513275ff59bb4e26928af4305f3e3b99
+run_name: awesome-bug-381
+run_uuid: 513275ff59bb4e26928af4305f3e3b99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674516217123
+status: 4
+tags: []
+user_id: pedroberaldo

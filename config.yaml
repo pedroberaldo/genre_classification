@@ -14,6 +14,7 @@ main:
   random_seed: 42
 data:
   file_url: "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises/blob/master/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/genres_mod.parquet?raw=true"
+  raw_data : "exercise_14/raw_data.parquet:latest"
   reference_dataset: "exercise_14/preprocessed_data.csv:latest"
   train_data: "exercise_14/data_train.csv:latest"
   test_data: "exercise_14/data_test.csv:latest"

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/dc0d1ee8483e4e258e087b7356d36698/artifacts
+end_time: 1674518863800
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dc0d1ee8483e4e258e087b7356d36698
+run_name: suave-donkey-119
+run_uuid: dc0d1ee8483e4e258e087b7356d36698
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674518792788
+status: 4
+tags: []
+user_id: pedroberaldo

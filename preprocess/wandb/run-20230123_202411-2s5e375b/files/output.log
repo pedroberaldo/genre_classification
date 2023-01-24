@@ -1,0 +1,35 @@
+2023-01-23 20:24:13,120 Downloading artifact
+wandb: ERROR Project pedroberaldo/exercise_14 does not contain artifact: "preprocessed_data.csv:latest"
+Traceback (most recent call last):
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/apis/public.py", line 520, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/apis/public.py", line 2583, in __init__
+    self._load()
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/apis/public.py", line 3097, in _load
+    raise ValueError(
+ValueError: Project pedroberaldo/exercise_14 does not contain artifact: "preprocessed_data.csv:latest"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/pedroberaldo/coding/udacity/mlops/genre_classification/preprocess/run.py", line 80, in <module>
+    go(args)
+  File "/Users/pedroberaldo/coding/udacity/mlops/genre_classification/preprocess/run.py", line 19, in go
+    artifact = run.use_artifact(args.input_artifact)
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1957, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/apis/public.py", line 520, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/apis/public.py", line 2583, in __init__
+    self._load()
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/lib/python3.9/site-packages/wandb/apis/public.py", line 3097, in _load
+    raise ValueError(
+wandb.errors.error.CommError: Project pedroberaldo/exercise_14 does not contain artifact: "preprocessed_data.csv:latest"

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/686c14d2d2404b73b600ce99f21d7ccf/artifacts
+end_time: 1674516732980
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 686c14d2d2404b73b600ce99f21d7ccf
+run_name: bouncy-foal-10
+run_uuid: 686c14d2d2404b73b600ce99f21d7ccf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674516552757
+status: 4
+tags: []
+user_id: pedroberaldo

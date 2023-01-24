@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/e2112014e9f7484c82ddcc43d42aaf44/artifacts
+end_time: 1674517019981
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e2112014e9f7484c82ddcc43d42aaf44
+run_name: colorful-yak-63
+run_uuid: e2112014e9f7484c82ddcc43d42aaf44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674517014185
+status: 4
+tags: []
+user_id: pedroberaldo

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/b0acb67b4968436db701d0440bb88c2a/artifacts
+end_time: 1674516388123
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b0acb67b4968436db701d0440bb88c2a
+run_name: monumental-skunk-505
+run_uuid: b0acb67b4968436db701d0440bb88c2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674516385553
+status: 4
+tags: []
+user_id: pedroberaldo

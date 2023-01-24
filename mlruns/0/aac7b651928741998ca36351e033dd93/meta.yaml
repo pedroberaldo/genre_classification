@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/aac7b651928741998ca36351e033dd93/artifacts
+end_time: 1674518277193
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aac7b651928741998ca36351e033dd93
+run_name: melodic-dog-365
+run_uuid: aac7b651928741998ca36351e033dd93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674518149311
+status: 4
+tags: []
+user_id: pedroberaldo

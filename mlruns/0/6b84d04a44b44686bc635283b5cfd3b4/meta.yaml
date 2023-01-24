@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/6b84d04a44b44686bc635283b5cfd3b4/artifacts
+end_time: 1674516452667
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6b84d04a44b44686bc635283b5cfd3b4
+run_name: redolent-wren-106
+run_uuid: 6b84d04a44b44686bc635283b5cfd3b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674516406503
+status: 3
+tags: []
+user_id: pedroberaldo

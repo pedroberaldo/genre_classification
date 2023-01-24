@@ -43,7 +43,7 @@ def go(config: DictConfig):
             os.path.join(root_path, "preprocess"),
             "main",
             parameters={
-                "input_artifact": config["data"]["reference_dataset"],
+                "input_artifact": config["data"]["raw_data"],
                 "artifact_name": "preprocessed_data.csv",
                 "artifact_type": "preprocessed_data",
                 "artifact_description": "Preprocessed data"
@@ -57,8 +57,8 @@ def go(config: DictConfig):
             os.path.join(root_path, "check_data"),
             "main",
             parameters={
-                "reference_artifact": config["data"]["train_data"],
-                "sample_artifact": config["data"]["test_data"],
+                "reference_artifact": config["data"]["reference_dataset"],
+                "sample_artifact": "preprocessed_data.csv:latest",
                 "ks_alpha": config["data"]["ks_alpha"]
             },
         )
@@ -74,7 +74,7 @@ def go(config: DictConfig):
                 "artifact_type": "preprocessed_data",
                 "test_size": config["data"]["test_size"],
                 "random_state" : config["main"]["random_seed"],
-                "stratify" : config["main"]["stratify"]
+                "stratify" : config["data"]["stratify"]
             },
         )
 
@@ -91,10 +91,10 @@ def go(config: DictConfig):
             "main",
             parameters={
                 "train_data": config["data"]["train_data"],
-                "model_config": model_config['random_forest'],
-                "export_artifact": model_config["export_artifact"],
+                "model_config": model_config,
+                "export_artifact": config["random_forest_pipeline"]["export_artifact"],
                 "val_size" : config["data"]["val_size"],
-                "stratify" : config["main"]["stratify"]
+                "stratify" : config["data"]["stratify"]
             },
         )
 
@@ -104,8 +104,8 @@ def go(config: DictConfig):
             os.path.join(root_path, "evaluate"),
             "main",
             parameters={
-                "model_export": config["random_forest_pipeline"]["export_artifact"],
-                "test_data": config["data"]["test_data"],
+                "model_export": f"{config['random_forest_pipeline']['export_artifact']}:latest",
+                "test_data": "data_test.csv:latest"
             },
         )
 

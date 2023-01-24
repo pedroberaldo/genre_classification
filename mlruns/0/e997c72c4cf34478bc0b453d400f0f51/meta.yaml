@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/e997c72c4cf34478bc0b453d400f0f51/artifacts
+end_time: 1674518707602
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e997c72c4cf34478bc0b453d400f0f51
+run_name: salty-wasp-508
+run_uuid: e997c72c4cf34478bc0b453d400f0f51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674518701239
+status: 4
+tags: []
+user_id: pedroberaldo

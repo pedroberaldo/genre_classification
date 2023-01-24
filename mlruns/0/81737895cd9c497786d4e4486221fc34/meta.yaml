@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/81737895cd9c497786d4e4486221fc34/artifacts
+end_time: 1674516540703
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 81737895cd9c497786d4e4486221fc34
+run_name: agreeable-toad-245
+run_uuid: 81737895cd9c497786d4e4486221fc34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674516512422
+status: 4
+tags: []
+user_id: pedroberaldo

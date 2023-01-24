@@ -1,0 +1,9 @@
+2023-01-23 21:15:15,214 Downloading and reading test artifact
+Traceback (most recent call last):
+  File "run.py", line 83, in <module>
+    go(args)
+  File "run.py", line 20, in go
+    test_data_path = run.use_artifact(args.test_data).file()
+  File "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-4f669a7b7940abd40d46e2eb203ee4ae686701e7/lib/python3.8/site-packages/wandb/apis/public.py", line 2984, in file
+    raise ValueError(
+ValueError: This artifact contains more than one file, call `.download()` to get all files or call .get_path("filename").download()

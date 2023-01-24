@@ -1,0 +1,31 @@
+{
+    "os": "macOS-13.1-x86_64-i386-64bit",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-01-23T23:24:13.070222",
+    "startedAt": "2023-01-23T23:24:11.493339",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "exercise_14/preprocessed_data.csv:latest",
+        "--artifact_name",
+        "preprocessed_data.csv",
+        "--artifact_type",
+        "preprocessed_data",
+        "--artifact_description",
+        "Preprocessed data"
+    ],
+    "state": "running",
+    "program": "/Users/pedroberaldo/coding/udacity/mlops/genre_classification/preprocess/run.py",
+    "codePath": "preprocess/run.py",
+    "git": {
+        "remote": "git@github.com:pedroberaldo/genre_classification.git",
+        "commit": "10869864a84242021d7d3ee2ce8d979b9611304b"
+    },
+    "email": "pedro.beraldo@traivefinance.com",
+    "root": "/Users/pedroberaldo/coding/udacity/mlops/genre_classification",
+    "host": "codebox.local",
+    "username": "pedroberaldo",
+    "executable": "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-14e9675b94d1e1a66b5f8268db9277df17659440/bin/python"
+}

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/98eb6bcd142042018aeb2823321d6588/artifacts
+end_time: 1674518773558
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 98eb6bcd142042018aeb2823321d6588
+run_name: capable-fly-126
+run_uuid: 98eb6bcd142042018aeb2823321d6588
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674518738343
+status: 4
+tags: []
+user_id: pedroberaldo
