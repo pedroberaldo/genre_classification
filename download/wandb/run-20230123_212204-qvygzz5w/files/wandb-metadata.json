@@ -1,0 +1,31 @@
+{
+    "os": "macOS-13.1-x86_64-i386-64bit",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-01-24T00:22:05.968713",
+    "startedAt": "2023-01-24T00:22:04.664272",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises/blob/master/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/genres_mod.parquet?raw=true",
+        "--artifact_name",
+        "raw_data.parquet",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "Data as downloaded"
+    ],
+    "state": "running",
+    "program": "/Users/pedroberaldo/coding/udacity/mlops/genre_classification/download/download_data.py",
+    "codePath": "download/download_data.py",
+    "git": {
+        "remote": "git@github.com:pedroberaldo/genre_classification.git",
+        "commit": "20f8121db466d63aca48a419ee0e951d9767d1f3"
+    },
+    "email": "pedro.beraldo@traivefinance.com",
+    "root": "/Users/pedroberaldo/coding/udacity/mlops/genre_classification",
+    "host": "codebox.local",
+    "username": "pedroberaldo",
+    "executable": "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-95acb2a1f59d883b4e2ae05af0df1fea028555f4/bin/python"
+}

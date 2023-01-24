@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pedroberaldo/coding/udacity/mlops/genre_classification/mlruns/0/95f2f3f3e0674ef2b8a3d4db6203e1f4/artifacts
+end_time: 1674519475066
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 95f2f3f3e0674ef2b8a3d4db6203e1f4
+run_name: thoughtful-mule-976
+run_uuid: 95f2f3f3e0674ef2b8a3d4db6203e1f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1674519470161
+status: 4
+tags: []
+user_id: pedroberaldo

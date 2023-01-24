@@ -1,0 +1,27 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.15",
+    "heartbeatAt": "2023-01-24T00:23:33.670377",
+    "startedAt": "2023-01-24T00:23:32.059541",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--model_export",
+        "model_export:latest",
+        "--test_data",
+        "data_test.csv:latest"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "evaluate/run.py",
+    "git": {
+        "remote": "git@github.com:pedroberaldo/genre_classification.git",
+        "commit": "20f8121db466d63aca48a419ee0e951d9767d1f3"
+    },
+    "email": "pedro.beraldo@traivefinance.com",
+    "root": "/Users/pedroberaldo/coding/udacity/mlops/genre_classification",
+    "host": "codebox.local",
+    "username": "pedroberaldo",
+    "executable": "/Users/pedroberaldo/opt/anaconda3/envs/mlflow-4f669a7b7940abd40d46e2eb203ee4ae686701e7/bin/python"
+}

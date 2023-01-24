@@ -20,8 +20,8 @@ def go(config: DictConfig):
         # This was passed on the command line as a comma-separated list of steps
         steps_to_execute = config["main"]["execute_steps"].split(",")
     else:
-        assert isinstance(config["main"]["execute_steps"], list)
-        steps_to_execute = config["main"]["execute_steps"]
+
+        steps_to_execute = list(config["main"]["execute_steps"])
 
     # Download step
     if "download" in steps_to_execute:
@@ -38,21 +38,18 @@ def go(config: DictConfig):
         )
 
     if "preprocess" in steps_to_execute:
-
         _ = mlflow.run(
             os.path.join(root_path, "preprocess"),
             "main",
             parameters={
-                "input_artifact": config["data"]["raw_data"],
+                "input_artifact": "raw_data.parquet:latest",
                 "artifact_name": "preprocessed_data.csv",
                 "artifact_type": "preprocessed_data",
-                "artifact_description": "Preprocessed data"
+                "artifact_description": "Data with preprocessing applied"
             },
         )
-       
 
     if "check_data" in steps_to_execute:
-
         _ = mlflow.run(
             os.path.join(root_path, "check_data"),
             "main",
@@ -69,17 +66,15 @@ def go(config: DictConfig):
             os.path.join(root_path, "segregate"),
             "main",
             parameters={
-                "input_artifact": config["data"]["reference_dataset"],
+                "input_artifact": "preprocessed_data.csv:latest",
                 "artifact_root": "data",
-                "artifact_type": "preprocessed_data",
+                "artifact_type": "segregated_data",
                 "test_size": config["data"]["test_size"],
-                "random_state" : config["main"]["random_seed"],
-                "stratify" : config["data"]["stratify"]
+                "stratify": config["data"]["stratify"]
             },
         )
 
     if "random_forest" in steps_to_execute:
-
         # Serialize decision tree configuration
         model_config = os.path.abspath("random_forest_config.yml")
 
@@ -90,11 +85,12 @@ def go(config: DictConfig):
             os.path.join(root_path, "random_forest"),
             "main",
             parameters={
-                "train_data": config["data"]["train_data"],
+                "train_data": "data_train.csv:latest",
                 "model_config": model_config,
                 "export_artifact": config["random_forest_pipeline"]["export_artifact"],
-                "val_size" : config["data"]["val_size"],
-                "stratify" : config["data"]["stratify"]
+                "random_seed": config["main"]["random_seed"],
+                "val_size": config["data"]["test_size"],
+                "stratify": config["data"]["stratify"]
             },
         )
 
